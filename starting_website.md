@@ -2,7 +2,7 @@
 layout: default
 ---
 
-#Introduction
+# Introduction:
 
 In this data analysis project, we will be exploring the factors that contribute to the financial success of a movie, 
 with a focus on the role of inflation. The film industry is a highly competitive and rapidly changing field, and understanding 

@@ -5,5 +5,5 @@ show_downloads: True
 navigation:
   - title: Home
     url: /
-  - title: starting_website
+  - title: Starting_website
     url: starting_website

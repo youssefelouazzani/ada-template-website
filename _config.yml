@@ -3,7 +3,7 @@ title: Statistical guideline for a financially successful movie taking inflation
 description: Everyone loves movies!
 show_downloads: True
 navigation:
-- title: Home
+  - title: Home
     url: /
-- title: Starting_website
+  - title: Starting_website
     url: starting_website

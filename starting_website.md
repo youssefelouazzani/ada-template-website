@@ -26,5 +26,9 @@ By accounting for inflation, it is possible to get a more accurate picture of th
 
 This inflation adjustment was performed using the cpi library, such that all our financial data was adjusted according to the year 2010. Once all datapoints in our dataset are comparable, let's dive in and look at our data.
 
+# Exploratory data analysis:
+
+To begin, we will plot the distribution of movies over the years in our dataset, with a focus on the relative prevalence of each genre within each year.
+
 
 

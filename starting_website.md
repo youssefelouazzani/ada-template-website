@@ -16,7 +16,7 @@ Before analyzing the data, Some preprocessing steps to ensure that the data was 
 
 Once everything is set up, in order to homogenise all our financial data values according to inflation over the year. Inflation is an important factor to consider when analyzing financial data, especially when comparing data from different time periods. This is because inflation can affect the value of money over time, making it difficult to accurately compare financial data from different periods without taking it into account.
 
-![Inflation](inflation_hausse.jpg)
+![Inflation](inflation_hausse.jpg) 
 
 For example, if we consider a movie A that was released in the 1980s and made $50 million at the box office, and another movie B was released in the 2010s and made the exact same amount of money.
 

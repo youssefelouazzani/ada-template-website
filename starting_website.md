@@ -51,8 +51,19 @@ Let's see how does this translate when we perform a linear regression on the rem
 
 ![error_bars](320307526_2373683142808169_5645469628815439291_n.png)
 
+Are you curious about what factors drive movie revenue? Look no further! This graph reveals the key players and how they impact the bottom line. On the right side of the graph, you'll see features that boost revenue. On the left side, you'll see factors that drag it down.
+
+Budget is a top performer, with a coefficient of 0.5. This means that if all predictors take mean values an increase of budget by 1 leads on average to an increase by 0.5 of the revenue. But budget isn't the only factor at play. Some genres, like Buddy films, Romance films, and Suspense, really stand out. Movie runtime and release year also have an impact, although runtime tends to be positive while release year is negative. This could be because older movies are less likely to be shown in theaters as time goes on.
+
+Overall, this graph gives us a clear picture of the forces shaping movie revenue. Whether you're a filmmaker or just a fan, it's worth taking a closer look to understand what makes a movie a box office hit.
 
 
+Furthermore, When it comes to movies, it's important to remember that they often belong to multiple genres at the same time. While we previously examined the independent effect of each genre on revenue, the reality is that what makes a movie enjoyable is often the combination of genres. Think about your favorite films – chances are, they didn't just belong to one genre, but rather blended elements from a variety of genres to create a unique and memorable viewing experience. So, while it's helpful to understand the individual impact of each genre, it's also important to consider how different genres can work together to create a successful and satisfying movie.
+
+# Pairs of genre that are the most present in the most successfull movies: 
+
+In order to visualize this concept, we need to define a metric for selecting a subset of successful movies. One way to do this is by only considering films that at least double their budget – this is where the return on investment comes into play. 
 
 <iframe src="network-flow-graph.html" width="800" height="600"></iframe>
 
+Upon selecting our subset, we notice from our interactible sanky diagram plot that the most frequent pairs of genres in this subset are

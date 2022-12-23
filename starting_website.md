@@ -30,5 +30,5 @@ This inflation adjustment was performed using the cpi library, such that all our
 
 To begin, we will plot the distribution of movies over the years in our dataset, with a focus on the relative prevalence of each genre within each year.
 ![Dis](genre_years.png)
-html
+<iframe src="plot.html" width="800" height="600"></iframe>
 

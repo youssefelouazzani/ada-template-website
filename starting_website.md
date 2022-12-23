@@ -64,7 +64,7 @@ Furthermore, When it comes to movies, it's important to remember that they often
 
 In order to visualize this concept, we need to define a metric for selecting a subset of successful movies. One way to do this is by only considering films that at least double their budget – this is where the return on investment comes into play. 
 
-<iframe src="network-flow-graph.html" width="800" height="600"></iframe>
+<iframe src="sanky.html" width="800" height="600"></iframe>
 
 Upon selecting our subset, we notice from our interactive sanky diagram plot that the most frequent pairs of genres in this subset are
 
@@ -75,5 +75,7 @@ We've done the research for you. By querying all actors who have won prestigious
 <iframe src="roi_actors.html" width="800" height="600"></iframe>
 
 The results were clear: having an award-winning actor in your cast can have a positive effect on your movie's success. Sorry, cousin – looks like Leo wins this round.
+
+![leo](248992254_252016663558489_410827460829943064_n)
 
 

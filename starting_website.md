@@ -60,13 +60,22 @@ Overall, this graph gives us a clear picture of the forces shaping movie revenue
 
 Furthermore, When it comes to movies, it's important to remember that they often belong to multiple genres at the same time. While we previously examined the independent effect of each genre on revenue, the reality is that what makes a movie enjoyable is often the combination of genres. Think about your favorite films – chances are, they didn't just belong to one genre, but rather blended elements from a variety of genres to create a unique and memorable viewing experience. So, while it's helpful to understand the individual impact of each genre, it's also important to consider how different genres can work together to create a successful and satisfying movie.
 
-# Pairs of genre that are the most present in the most successfull movies: 
+# Uncovering the most common Pairs of the 20 Meaningfull genres present in our most successfull movies: 
 
 In order to visualize this concept, we need to define a metric for selecting a subset of successful movies. One way to do this is by only considering films that at least double their budget – this is where the return on investment comes into play. 
 
 <iframe src="sanky.html" width="800" height="600"></iframe>
 
-Upon selecting our subset, we notice from our interactive sanky diagram plot that the most frequent pairs of genres in this subset are
+Upon selecting our subset, we notice from our interactive sanky diagram plot that the 3 most frequent pairs of genres in this subset are (action, adventure), (action, buddy film) and (coming of age, action). The sanky diagram is a type of graph that is used to visualize the frequency of co-occurring events. In this case, the events are the pairs of genres that appear most frequently in our subset of successfull movies. 
+
+Making a movie represents a lot of money, so one might want to maximise its return on investment when making a movie 
+
+<iframe src="roi_genre.html" width="800" height="600"></iframe>
+
+The bar plot indicates that the movie genres with the highest return on investment (ROI) are Cult, Mystery, and Indie, with ROIs of approximately 60, 50, and 50 times the budget, respectively.The interactive bar plot suggests that these genres are less financially successful compared to Cult, Mystery, and Indie. So, you might need to choose wisely.
+
+
+# Presence of notorious actors :
 
 You've selected the genre, runtime, and release year for your movie. Now it's time to cast your actors. Should you splurge on a big-name star or go with a lesser-known actor, like your cousin who's trying to make it in New York?
 
@@ -76,6 +85,20 @@ We've done the research for you. By querying all actors who have won prestigious
 
 The results were clear: having an award-winning actor in your cast can have a positive effect on your movie's success. Sorry, cousin – looks like Leo wins this round.
 
-![leo](248992254_252016663558489_410827460829943064_n)
+![leo](248992254_252016663558489_410827460829943064_n.jpg)
+
+# Conclusion :
+
+We wanted to uncover the secrets behind the financial success of movies, so we conducted a study analyzing a diverse dataset of films released in the US between 1980 and 2010. Our data included information on metadata, box office revenue, runtime, language, country, and genre, as well as budget and revenue data from Wikidata and TMDb. We used movie box office revenue and return on investment as our metrics for financial success.
+
+Our analysis yielded some interesting insights. For one, budget appeared to be a major factor in a film's financial success. We also found that having a cast with prestigious awards under their belt seemed to have a positive effect.
+
+But it's important to note that there are many other variables at play when it comes to a movie's financial performance. Marketing strategies, competition, cinematography, distribution, and audience demographics are just a few examples.
+Further research could be conducted to more fully understand the impact of these and other confounders on the financial performance of movies.
+
+
+
+
+
 
 

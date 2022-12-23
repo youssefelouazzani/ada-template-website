@@ -66,4 +66,14 @@ In order to visualize this concept, we need to define a metric for selecting a s
 
 <iframe src="network-flow-graph.html" width="800" height="600"></iframe>
 
-Upon selecting our subset, we notice from our interactible sanky diagram plot that the most frequent pairs of genres in this subset are
+Upon selecting our subset, we notice from our interactive sanky diagram plot that the most frequent pairs of genres in this subset are
+
+You've selected the genre, runtime, and release year for your movie. Now it's time to cast your actors. Should you splurge on a big-name star or go with a lesser-known actor, like your cousin who's trying to make it in New York?
+
+We've done the research for you. By querying all actors who have won prestigious awards and mapping them to movies, we were able to determine whether a movie's cast included an award winner prior to its release. Using propensity score matching with exact matching on genre, we compared the performance of movies with award-winning casts to those without.
+
+<iframe src="roi_actors.html" width="800" height="600"></iframe>
+
+The results were clear: having an award-winning actor in your cast can have a positive effect on your movie's success. Sorry, cousin – looks like Leo wins this round.
+
+

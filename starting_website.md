@@ -38,7 +38,20 @@ Regardless of this, we also notice that drama has approximately the most number 
 # How does the different features of a Movie affect the Movie box office revenue and the return on investment rate ?
 
 After computing the correlation coeficcient of each pair of numerical feature, we obtain the following heatmap 
+
 <iframe src="heatmap.html" width="800" height="600"></iframe>
+
+While interacting with the heatmap, we found several interesting correlation coefficients. However, the most relevant independent pair for our purposes is the revenue and budget, which had a value of 0.56. By "independent," we mean that one feature is not used to calculate the other. However, we are missing out on important feature in the above heatmap, "The genre of the movie ".
+
+If you're a movie buff, you know that genre is a crucial element that shapes the overall feel and tone of a film. In our data, genre is represented as a list of strings. But how do we model this in a regression analysis? One option is to use a one-hot encoding scheme, where each unique genre gets its own separate column. However, with 265 initial genres, this could create a very large and unwieldy dataset.
+
+To streamline the process and avoid losing important information, we'll take a few steps to reduce the number of genres. First, we'll merge similar genres together to cut down on redundancy. Next, we'll encode the least common genres in a new variable, helping us to focus on the most prominent categories. Finally, we'll use recursive feature selection to identify the 20 most meaningful genres that can help explain the patterns in our dataset. By following these steps, we can strike the right balance between detail and simplicity in our analysis.
+
+Let's see how does this translate when we perform a linear regression on the remaining most meaningful features.
+
+![error_bars](320307526_2373683142808169_5645469628815439291_n.png)
+
+
 
 
 <iframe src="network-flow-graph.html" width="800" height="600"></iframe>

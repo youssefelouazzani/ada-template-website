@@ -4,17 +4,14 @@ layout: default
 
 # Introduction:
 
-Everyone loves movies! They provide entertainment and escape from the stresses of daily life, and it's no surprise that the movie industry plays a significant role in the global entertainment market. In fact, the global box office was worth $42.2 billion in 2019, showing the huge demand for movies and the potential for financial success.
+Movies provide an escape from reality and are loved by everyone. It's no surprise that the movie industry is a major player in the global entertainment market, with the global box office worth a whopping $42.2 billion in 2019. But what makes a movie financially successful? Is it the length of the film, the star power of the actors, the genre, or the budget? In this data story, we will explore these questions using data from a subset of movies released in the US between 1980 and 2010. We'll be using the CMU Movies dataset and supplementing it with additional data from Wikidata, TMDb, and IMDb. By measuring the financial success of a movie using the profit feature (defined as the difference between revenue and budget) and the return on investement feature, we hope to uncover the key factors that drive a movie's profitability.
 
-But what makes a movie financially successful? Is it the duration of the movie, the presence of certain actors and their notoriety, the genre it belongs to, or the budget dedicated to the movie? In this data story, we aim to use a data-driven approach to uncover the factors that contribute to a movie's financial profitability. To do this, we will analyze a subset of movies that were released in the US between 1980 and 2010, using the CMU Movies dataset and enriching it with data from Wikidata, TMDb, and IMDb. By measuring the success of a movie using the Profit feature, defined as the difference between the revenue and the budget, we will reveal the key factors that can drive the financial success of a movie.
 
 # The dataset:
 
 The CMU movies dataset appears to contain information about movies, including metadata such as the movie's Wikipedia and Freebase IDs, name, release date, box office revenue, runtime, languages, countries, and genres. We augmented it with additional data from external sources. This included movie ratings from IMDB and budget and revenue data from wikidata and TMDb. These data sources were scraped in order to obtain budget and revenue information for movies from the United States. Which will be then used to understand the financial success of the movies in the dataset.
 
-Before analyzing the data, Some preprocessing steps to ensure that the data was clean and ready for analysis. This included checking for missing values and dropping movies or actors with missing data.
-
-Once everything is set up, in order to homogenise all our financial data values according to inflation over the year. Inflation is an important factor to consider when analyzing financial data, especially when comparing data from different time periods. This is because inflation can affect the value of money over time, making it difficult to accurately compare financial data from different periods without taking it into account.
+Before analyzing the data, some preprocessing steps were necessary to ensure that the data was clean and ready for analysis. When we talk about financial success, the first problem that comes to mind is inflation. Inflation is an important factor to consider when analyzing financial data, especially when comparing data from different time periods. This is because inflation can affect the value of money over time, making it difficult to accurately compare financial data from different periods without taking it into account.
 
 ![Inflation](inflation_hausse.jpg) 
 
@@ -28,8 +25,21 @@ This inflation adjustment was performed using the cpi library, such that all our
 
 # Exploratory data analysis:
 
-To begin, we will plot the distribution of movies over the years in our dataset, with a focus on the relative prevalence of each genre within each year.
+We start our data story by plotting the distribution of movies over the years in our dataset, with a focus on the relative prevalence of each genre within each year.
 ![Dis](genre_years.png)
+
+
+The graph reveals a repeating pattern in which there is a local maximum of movies produced every 5 years. This means that within a five year period, there is a relatively high number of movies produced, followed by a relatively lower number of movies produced in the following years. This pattern is repeated over time, with the number of movies produced in a particular year fluctuating between high and low values.
+
+There are several potential reasons for this pattern. One possibility is that there are certain factors that influence the production of movies, such as technological advancements, cultural trends, and economic conditions, which may fluctuate over time and lead to changes in the number of movies produced. Another possibility is that there are cyclical patterns in the movie industry, with certain genres becoming more popular at certain times and then declining in popularity before increasing again, resulting in changes in the number of movies produced. It is also possible that this pattern is simply due to random fluctuations and does not have any underlying cause.
+
+Regardless of this, we also notice that drama has approximately the most number of movies in each year followed respectively by comedy, thriller, action. One might assume that these biggest genres are the ones that influence the most the financial success of a movie, let's see if that is indeed the case. 
+
+# How does the different features of a Movie affect the Movie box office revenue and the return on investment rate ?
+
+After computing the correlation coeficcient of each pair of numerical feature, we obtain the following heatmap 
+<iframe src="heatmap.html" width="800" height="600"></iframe>
+
 
 <iframe src="network-flow-graph.html" width="800" height="600"></iframe>
 
